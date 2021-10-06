@@ -6,7 +6,7 @@ import {Col, Layout, Row} from 'antd';
 import 'antd/dist/antd.css';
 import classes from './App.module.css';
 
-const {Header, Footer, Content} = Layout;
+const {Header} = Layout;
 
 const App = () => (
   <Row className={classes.row}>

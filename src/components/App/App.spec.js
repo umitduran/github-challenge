@@ -7,10 +7,7 @@ import App from './App';
 describe('components > App', () => {
   const mockStore = configureStore([]);
   const store = mockStore({
-    count: {
-      value: 6,
-    },
-    random: {
+    userInfo: {
       isLoading: false,
       hasError: false,
       isFulfilled: false,
