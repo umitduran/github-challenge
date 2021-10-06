@@ -2,6 +2,7 @@ import {combineReducers, createStore, applyMiddleware, compose} from 'redux';
 import {Provider} from 'react-redux';
 import {persistStateEnhancer} from './enhancers/persistStateEnhancer';
 import {promiseResolverMiddleware} from './middlewares/promiseResolverMiddleware';
+import {LoginReducer} from './features/login';
 import {CounterReducer} from './features/counter';
 import {RandomReducer} from './features/random';
 import withProvider from './withProvider';
@@ -11,6 +12,7 @@ import withProvider from './withProvider';
  * all features of the application
  */
 const rootReducer = combineReducers({
+  userInfo : LoginReducer,
   count: CounterReducer,
   random: RandomReducer,
 });
