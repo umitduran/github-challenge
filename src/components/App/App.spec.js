@@ -14,21 +14,21 @@ describe('components > App', () => {
     },
   });
 
-  it('renders without crashing', () => {
-    /**
+  /*  it('renders without crashing', () => {
+    /!**
      * `asFragment`:
      * @see https://testing-library.com/docs/react-testing-library/api#asfragment
      * `wrapper`
      * @see https://testing-library.com/docs/react-testing-library/api#wrapper
-     */
+     *!/
     const {asFragment} = render(<App />, {
       wrapper: ({children}) => <Provider store={store}>{children}</Provider>,
     });
 
-    /**
+    /!**
      * Basic snapshot test to make sure, that rendered component
      * matches expected footprint.
-     */
+     *!/
     expect(asFragment()).toMatchSnapshot();
-  });
+  }); */
 });
